@@ -1,0 +1,12 @@
+build
+dist
+lib-cov
+coverage.html
+.DS_Store
+node_modules
+publish
+*.sock
+*.swp
+*.bat
+*.sh
+log
