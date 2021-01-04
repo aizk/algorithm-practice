@@ -1,6 +1,6 @@
 # LeetCode
 
-根据知识点对做过的题目分类。
+根据类型对题目分类。
 
 # Tree
 
@@ -30,6 +30,12 @@
 # DP
 
 - [0811-coin-lcci]()
+- [0343-integer-break](https://leetcode-cn.com/problems/integer-break/) 思路
+- [0300-最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+
+# Sort
+
+- [] Quick Sort
 
 # Thanks
 
