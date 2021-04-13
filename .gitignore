@@ -11,3 +11,4 @@ publish
 *.bat
 *.sh
 log
+__pycache__

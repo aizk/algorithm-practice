@@ -1,7 +1,5 @@
 package _416
 
-import "sync"
-
 func main() {
 
 }

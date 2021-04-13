@@ -1,11 +1,13 @@
+// https://leetcode-cn.com/problems/coin-lcci/
 package main
+
 
 import "fmt"
 
 var M = []int{1, 5, 10, 20}
 
 func main() {
-	fmt.Println(DP(10))
+	fmt.Println(DP(100))
 }
 
 // 需要考虑 <5、<10、<20 的边缘情况，此时 sum/M[3] == 0，会少一层循环
