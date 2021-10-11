@@ -35,7 +35,7 @@
 
 # Sort
 
-- [] Quick Sort
+- [快速排序](/)
 
 # Thanks
 
