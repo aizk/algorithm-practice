@@ -1,11 +1,11 @@
-from sort.quick.quick import exch
+from quick import exch
 
 
 # 个人认为这是最简单优雅的逻辑
 def partition(a, s, e):
     v = a[e]  # 取最后一个数
-    i = s - 1
-    for j in range(s, e):  # 不能循环到最后一个数 e，range 正好不包含 e
+    i = s - 1 # i 在 s 的前一个位置
+    for j in range(s, e):  # 不能循环到最后一个下标 e（range 正好不包含 e）
         #  从前往后找小于 v 的数字
         if a[j] <= v:
             # 如果小于 v 依次放到第一个元素、第二个元素...
@@ -18,9 +18,10 @@ def partition(a, s, e):
             # ---
             i += 1
             exch(a, i, j)
-    # 遍历完成后，i 指向最后一个小于 v 的元素，
-    # 把 v 放在 i + 1 的位置，返回这个位置（i + 1）
+    # 遍历完成后，i 指向最后一个小于等于 v 的元素，
+    # 把最后一个数 v 放在 i + 1 的位置，此时 i 后面的数肯定大于等于 v，把 v 放在 i + 1 的位置刚好
     exch(a, i + 1, e)
+    # 返回这个位置（i + 1）
     return i + 1
 
 
